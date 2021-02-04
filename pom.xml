@@ -16,7 +16,7 @@
 	</parent>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/highsource/ogc-schemas/issues</url>
+		<url>https://github.com/ogc-schemas/ogc-schemas/issues</url>
 	</issueManagement>
 	<inceptionYear>2008</inceptionYear>
 	<developers>
@@ -53,9 +53,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git@github.com:highsource/ogc-schemas.git</connection>
-		<developerConnection>scm:git:git@github.com:highsource/ogc-schemas.git</developerConnection>
-		<url>https://github.com/highsource/ogc-schemas</url>
+		<connection>scm:git:git@github.com:ogc-schemas/ogc-schemas.git</connection>
+		<developerConnection>scm:git:git@github.com:ogc-schemas/ogc-schemas.git</developerConnection>
+		<url>https://github.com/ogc-schemas/ogc-schemas</url>
 	</scm>
 	<modules>
 		<!-- Schemas -->
