@@ -2,12 +2,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.jvnet.ogc</groupId>
+	<groupId>org.ogc-schemas</groupId>
 	<artifactId>ogc-schemas-project</artifactId>
 	<version>2.6.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>OGC Schemas Project</name>
-	<url>https://github.com/highsource/ogc-schemas</url>
+	<url>https://github.com/ogc-schemas/ogc-schemas</url>
 	<description>OGC Schemas project provides JAXB 2.x bindings for XML Schemas defined by the Open Geospatial Consortium (OGC).</description>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>

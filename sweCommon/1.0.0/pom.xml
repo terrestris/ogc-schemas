@@ -6,7 +6,7 @@
 	<packaging>jar</packaging>
 	<name>OGC SWE Common 1.0.0</name>
 	<parent>
-		<groupId>org.jvnet.ogc</groupId>
+		<groupId>org.ogc-schemas</groupId>
 		<artifactId>ogc-schema-parent</artifactId>
 		<version>2.6.2-SNAPSHOT</version>
 		<relativePath>../../schema-parent/pom.xml</relativePath>

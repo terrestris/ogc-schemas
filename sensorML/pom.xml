@@ -6,7 +6,7 @@
 	<packaging>pom</packaging>
 	<name>OGC SensorML</name>
 	<parent>
-		<groupId>org.jvnet.ogc</groupId>
+		<groupId>org.ogc-schemas</groupId>
 		<artifactId>ogc-schemas-project</artifactId>
 		<version>2.6.2-SNAPSHOT</version>
 	</parent>
