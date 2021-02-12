@@ -1,6 +1,7 @@
 {
-	"name": "ogc-schemas",
+	"name": "@ogc-schemas/ogc-schemas",
 	"version": "2.6.2-SNAPSHOT",
+	"license": "BSD-2-Clause",
 	"description": "Jsonix XML-JSON mappings for OGC Schemas.",
 	"keywords": [
 		"json",
@@ -86,16 +87,10 @@
 		"WMTS",
 		"WPS"
 	],
-	"homepage": "https://github.com/highsource/ogc-schemas",
+	"homepage": "https://github.com/ogc-schemas/ogc-schemas",
 	"bugs": {
-		"url": "http://github.com/highsource/ogc-schemas/issues"
+		"url": "http://github.com/ogc-schemas/ogc-schemas/issues"
 	},
-	"licenses": [
-		{
-			"type": "BSD-2-Clause",
-			"url": "http://github.com/highsource/ogc-schemas/raw/master/LICENSE"
-		}
-	],
 	"author": {
 		"name": "Alexey Valikov",
 		"url": "https://github.com/highsource"
@@ -103,7 +98,7 @@
 	"main": "ogc-schemas.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/highsource/ogc-schemas"
+		"url": "https://github.com/ogc-schemas/ogc-schemas"
 	},
 	"scripts": {
 		"test": "nodeunit tests/tests.js"
@@ -113,7 +108,7 @@
 		"w3c-schemas": ">=1.4.0"
 	},
 	"devDependencies": {
-		"nodeunit": "0.x.x",
-		"node-static": "0.x.x"
+		"node-static": "0.x.x",
+		"nodeunit": "0.x.x"
 	}
 }

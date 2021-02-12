@@ -403,6 +403,8 @@
 							<executable>npm</executable>
 							<arguments>
 								<argument>publish</argument>
+								<argument>--access</argument>
+								<argument>public</argument>
 								<argument>.</argument>
 							</arguments>
 						</configuration>
