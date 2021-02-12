@@ -1,6 +1,6 @@
 {
 	"name": "@ogc-schemas/ogc-schemas",
-	"version": "2.6.2-SNAPSHOT",
+	"version": "3.0.0",
 	"license": "BSD-2-Clause",
 	"description": "Jsonix XML-JSON mappings for OGC Schemas.",
 	"keywords": [
