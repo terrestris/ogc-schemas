@@ -20,7 +20,7 @@
 					</swe:Count>
 				</swe:field>
 			</swe:DataRecord>
-		</option> 
+		</option>
 		<productDeliveryOptions>
 			<mediaDelivery>
 				<packageMedium>DVD</packageMedium>
@@ -43,12 +43,12 @@
 					</swe:Category>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<!--sceneCentreCoordinates Parameter - with WRSInformation and sceneWidth constraints-->
 			<sceneSelectionParameter>
 				<swe:DataArray definition="http://www.opengis.net/def/parameter/ESA/1.0/sceneCentreCoordinates" optional="false" updatable="false">
 					<swe:identifier>sceneCentreCoordinates</swe:identifier>
-					<swe:description>Scene Center coordiantes</swe:description>
+					<swe:description>Scene Center coordinates</swe:description>
 					<swe:elementCount>
 						<swe:Count definition="http://www.opengis.net/def/parameter/ESA/1.0/SpatialDimension"/>
 					</swe:elementCount>
@@ -137,7 +137,7 @@
 						</swe:encoding>
 						<swe:values><SceneWidth>450</SceneWidth></swe:values>
 					</swe:DataArray>
-				</sceneRestriction> 
+				</sceneRestriction>
 			</sceneSelectionParameter>
 			<!--sceneStartStopTime Parameter with WRSInformation and SceneWidth restriction -->
 			<sceneSelectionParameter>
@@ -223,7 +223,7 @@
 						</swe:encoding>
 						<swe:values><SceneWidth>450</SceneWidth></swe:values>
 					</swe:DataArray>
-				</sceneRestriction> 
+				</sceneRestriction>
 			</sceneSelectionParameter>
 		</sceneSelectionOption>
 		<sceneSelectionOption>
@@ -287,8 +287,8 @@
 									<Step>0.02</Step>
 								</FloatingPassLenght>
 							</swe:values>
-						</swe:DataArray>	
-				</sceneRestriction> 
+						</swe:DataArray>
+				</sceneRestriction>
 			</sceneSelectionParameter>
 		</sceneSelectionOption>
 	</orderOptions>

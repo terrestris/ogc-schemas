@@ -188,7 +188,7 @@
 	<!-- ========================================================================================= -->
 	<xs:complexType name="AbstractTextureParameterizationType" abstract="true">
 		<xs:annotation>
-			<xs:documentation>Base class for augmenting a link "texture->surface" with texture parameterization. Subclasses of this
+			<xs:documentation>Base class for augmenting a link "texture→surface" with texture parameterization. Subclasses of this
 				class define concrete parameterizations. Currently, texture coordinates and texture coordinate generation using a
 				transformation matrix are available. </xs:documentation>
 		</xs:annotation>

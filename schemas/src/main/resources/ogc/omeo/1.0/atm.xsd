@@ -1,9 +1,9 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:atm="http://www.opengis.net/atm/2.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:eop="http://www.opengis.net/eop/2.0" targetNamespace="http://www.opengis.net/atm/2.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0.0">
     <annotation>
         <documentation>Atmospheric products applicaiton schema.
-        
+
         Earth Observation Metadata profile of Observations and Measurements is an OGC Standard.
-        Copyright (c) 2013 Open Geospatial Consortium. 
+        Copyright (c) 2013 Open Geospatial Consortium.
         To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
         </documentation>
     </annotation>
@@ -120,7 +120,7 @@
                     </element>
                     <element name="centreViewAngles" type="gml:MeasureOrNilReasonListType">
                         <annotation>
-                            <documentation>Comma separated triplet of acquisition viewing angles given at the centerOf coordiantes on the ground (bottom of atmosphere), SolarZenithAngle, LineOfSightZenithAngle, RelativeAzimuth given in degrees. </documentation>
+                            <documentation>Comma separated triplet of acquisition viewing angles given at the centerOf coordinates on the ground (bottom of atmosphere), SolarZenithAngle, LineOfSightZenithAngle, RelativeAzimuth given in degrees. </documentation>
                         </annotation>
                     </element>
                 </sequence>

@@ -104,7 +104,7 @@
 										<UML:Classifier xmi.idref="EAID_9D4101CB_DAF4_4618_874B_D61E8998254A"/>
 									</UML:StructuralFeature.type>
 									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="description" value="Comma separated triplet of acquisition viewing angles given at the centerOf coordiantes on the ground (bottom of atmosphere), SolarZenithAngle, LineOfSightZenithAngle, RelativeAzimuth given in degrees. "/>
+										<UML:TaggedValue tag="description" value="Comma separated triplet of acquisition viewing angles given at the centerOf coordinates on the ground (bottom of atmosphere), SolarZenithAngle, LineOfSightZenithAngle, RelativeAzimuth given in degrees. "/>
 										<UML:TaggedValue tag="type" value="MeasureOrNilReasonList"/>
 										<UML:TaggedValue tag="derived" value="0"/>
 										<UML:TaggedValue tag="containment" value="Not Specified"/>

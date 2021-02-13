@@ -63,7 +63,7 @@
       <maxInclusive value="360.0"/>
     </restriction>
   </simpleType>
-  
+
   <simpleType name="enumBaseType">
     <restriction base="string" />
   </simpleType>
@@ -134,7 +134,7 @@
       <enumeration value="upperLeft"/>
     </restriction>
   </simpleType>
-  
+
   <simpleType name="itemIconStateType">
     <list itemType="kml:itemIconStateEnumType"/>
   </simpleType>
@@ -179,7 +179,7 @@
       <enumeration value="onExpire"/>
     </restriction>
   </simpleType>
-  
+
   <simpleType name="kmlVersionType">
     <restriction base="string">
       <pattern value="2.[2-3](.(0|[1-9][0-9]?))?"/>
@@ -233,31 +233,31 @@
       <documentation>Elements that substitute for kml:AbstractBgColorGroup are kml:bgColor and kml:color.</documentation>
     </annotation>
   </element>
-  
+
   <element name="AbstractExtendedDataGroup" abstract="true" type="anyType">
     <annotation>
       <documentation>Elements that substitute for kml:AbstractExtendedDataGroup are kml:ExtendedData and kml:Metadata.</documentation>
     </annotation>
   </element>
-  
+
   <element name="AbstractLinkGroup" abstract="true" type="kml:AbstractObjectType"
     substitutionGroup="kml:AbstractObjectGroup">
     <annotation>
       <documentation>Elements that substitute for kml:AbstractLinkGroup are kml:Link and kml:Url.</documentation>
     </annotation>
-  </element> 
-  
+  </element>
+
   <element name="AbstractSnippetGroup" abstract="true" type="anyType">
     <annotation>
       <documentation>Elements that substitute for kml:AbstractSnippetGroup are kml:snippet and kml:Snippet.</documentation>
     </annotation>
-  </element> 
-  
+  </element>
+
   <element name="AbstractUpdateOptionGroup" abstract="true" type="anyType">
     <annotation>
       <documentation>Elements that substitute for kml:AbstractUpdateOptionGroup are kml:Create, kml:Change and kml:Delete.</documentation>
     </annotation>
-  </element> 
+  </element>
 
   <element name="address" type="string"/>
   <element name="altitude" type="double" default="0.0"/>
@@ -295,7 +295,7 @@
   <element name="fill" type="boolean" default="1"/>
   <element name="abstractFlyToMode" abstract="true" type="kml:enumBaseType"/>
   <element name="flyToMode" type="kml:flyToModeEnumType" default="bounce" substitutionGroup="kml:abstractFlyToMode"/>
-  <element name="flyToView" type="boolean" default="0"/>  
+  <element name="flyToView" type="boolean" default="0"/>
   <element name="abstractGridOrigin" abstract="true" type="kml:enumBaseType"/>
   <element name="gridOrigin" type="kml:gridOriginEnumType" default="lowerLeft"  substitutionGroup="kml:abstractGridOrigin"/>
   <element name="heading" type="kml:angle360Type" default="0.0"/>
@@ -375,7 +375,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
   <element name="sourceHref" type="anyURI"/>
   <element name="snippet" type="string" substitutionGroup="kml:AbstractSnippetGroup"/>
   <element name="abstractState" abstract="true" type="anySimpleType"/>
-  <element name="state" type="kml:itemIconStateType" 
+  <element name="state" type="kml:itemIconStateType"
     substitutionGroup="kml:abstractState"/>
   <element name="styleUrl" type="anyURI"/>
   <element name="targetHref" type="anyURI"/>
@@ -403,7 +403,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
   <element name="x" type="double" default="1.0"/>
   <element name="y" type="double" default="1.0"/>
   <element name="z" type="double" default="1.0"/>
-  
+
   <group name="AltitudeModeGroup">
     <all>
       <element ref="kml:altitudeMode" minOccurs="0"/>
@@ -411,7 +411,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
       <element ref="kml:AltitudeModeSimpleExtensionGroup" minOccurs="0" maxOccurs="unbounded"/>
       <element ref="kml:AltitudeModeObjectExtensionGroup" minOccurs="0" maxOccurs="unbounded"/>
     </all>
-  </group>  
+  </group>
   <element name="AltitudeModeSimpleExtensionGroup" abstract="true" type="anySimpleType"/>
   <element name="AltitudeModeObjectExtensionGroup" abstract="true"
     substitutionGroup="kml:AbstractObjectGroup"/>
@@ -558,7 +558,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
     type="anySimpleType"/>
   <element name="CameraObjectExtensionGroup" abstract="true"
     substitutionGroup="kml:AbstractObjectGroup"/>
-  
+
   <element name="Metadata" type="kml:MetadataType" substitutionGroup="kml:AbstractExtendedDataGroup">
     <annotation>
       <documentation>kml:Metadata was deprecated in KML 2.2</documentation>
@@ -641,7 +641,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
         <attribute name="uom" type="anyURI">
           <annotation>
             <documentation>The symbol for the unit of measure for the kml:Data values.</documentation>
-          </annotation>      
+          </annotation>
         </attribute>
         <anyAttribute namespace="##other" processContents="lax"/>
       </extension>
@@ -748,7 +748,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
     type="anySimpleType"/>
   <element name="AbstractTimePrimitiveObjectExtensionGroup" abstract="true"
     substitutionGroup="kml:AbstractObjectGroup"/>
-  
+
   <element name="kml" type="kml:KmlType">
     <annotation>
       <documentation><![CDATA[<kml> is the root element.]]></documentation>
@@ -850,84 +850,84 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
     <annotation>
      <documentation>kml:SimpleArrayField is not allowed in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:SimpleField/@uom)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>Attribute 'uom' is not a valid child of kml:SimpleField in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Data/@uom)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>Attribute 'uom' is not a valid child of kml:Data in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Camera/kml:horizFov)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:horizFov is not a valid child of kml:Camera in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:LookAt/kml:horizFov)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:horizFov is not a valid child of kml:LookAt in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Create/kml:MultiGeometry)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:MultiGeometry is not a valid child of kml:Create in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Delete/kml:MultiGeometry)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:MultiGeometry is not a valid child of kml:Delete in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Delete/kml:Point)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:Point is not a valid child of kml:Delete in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Delete/kml:LineString)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:LineString is not a valid child of kml:Delete in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Delete/kml:LinearRing)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:LinearRing is not a valid child of kml:Delete in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Delete/kml:Polygon)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:Polygon is not a valid child of kml:Delete in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
    <assert test="if (.//kml:Delete/kml:Model)
     then starts-with(@version,'2.3')
     else true()">
     <annotation>
      <documentation>kml:Model is not a valid child of kml:Delete in versions of KML prior to 2.3.0.</documentation>
     </annotation>
-   </assert>   
+   </assert>
   </complexType>
   <element name="KmlSimpleExtensionGroup" abstract="true" type="anySimpleType"/>
   <element name="KmlObjectExtensionGroup" abstract="true"
@@ -1001,11 +1001,11 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
         maxOccurs="unbounded"/>
     </all>
     <attribute name="type" type="string"/>
-    <attribute name="name" type="string"/>    
+    <attribute name="name" type="string"/>
     <attribute name="uom" type="anyURI">
       <annotation>
         <documentation>The symbol for the unit of measure for the kml:SimpleField values.</documentation>
-      </annotation>      
+      </annotation>
     </attribute>
     <anyAttribute namespace="##other" processContents="lax"/>
   </complexType>
@@ -1023,7 +1023,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
     <attribute name="uom" type="anyURI">
       <annotation>
         <documentation>The symbol for the unit of measure for the kml:SimpleArrayData values.</documentation>
-      </annotation>      
+      </annotation>
     </attribute>
     <anyAttribute namespace="##other" processContents="lax"/>
   </complexType>
@@ -1083,7 +1083,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
             maxOccurs="unbounded"/>
           <element ref="kml:NetworkLinkObjectExtensionGroup" minOccurs="0"
             maxOccurs="unbounded"/>
-        </all>     
+        </all>
       </extension>
     </complexContent>
   </complexType>
@@ -1171,7 +1171,7 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
     substitutionGroup="kml:AbstractObjectGroup"/>
   <element name="Link" type="kml:LinkType"
     substitutionGroup="kml:AbstractLinkGroup"/>
-  <element name="Url" type="kml:LinkType" 
+  <element name="Url" type="kml:LinkType"
     substitutionGroup="kml:AbstractLinkGroup">
     <annotation>
       <documentation>kml:Url was deprecated in KML 2.2</documentation>
@@ -1597,12 +1597,12 @@ Specifies the south latitude value in decimal degrees in the interval: -180 ≤ 
   <complexType name="AbstractLatLonBoxType" abstract="true">
    <annotation>
     <documentation><![CDATA[
-In KML 2.3, the allowed value range in decimal degrees used by kml:east and kml:west was extended by a factor of 2 (from ±180 in KML 2.2) to ±360. This was done in order to accommodate bounding boxes anywhere on the earth, including overlaps of the anti-meridian, and of any size up to full global coverage. With the extension of the longitude range, all degree values, except -360 = 0 = 360 (mod 360), have exactly two equivalent choices modulo 360, e.g. -359 = 1 (mod 360). The latitude range for kml:north and kml:south remain the same as in KML 2.2 and the following constraints C1 (i.e. the non-trivial latitude interval constraint) and C2 (i.e. the non-trivial longitude interval constraint) are unchanged: 
-    C1  kml:south < kml:north (non-trivial latitude interval); 
-    C2  kml:west < kml:east (non-trivial longitude interval). 
-New constraints in KML 2.3 are introduced with the longitude range extension to avoid self overlaps and to preserve uniqueness of longitude interval values: 
-    C3  kml:east - kml:west ≤ 360 (non-self-overlap); 
-    C4  If (|kml:west| or |kml:east|) > 180, then kml:east > 0 and kml:west < 180 (uniqueness). 
+In KML 2.3, the allowed value range in decimal degrees used by kml:east and kml:west was extended by a factor of 2 (from ±180 in KML 2.2) to ±360. This was done in order to accommodate bounding boxes anywhere on the earth, including overlaps of the anti-meridian, and of any size up to full global coverage. With the extension of the longitude range, all degree values, except -360 = 0 = 360 (mod 360), have exactly two equivalent choices modulo 360, e.g. -359 = 1 (mod 360). The latitude range for kml:north and kml:south remain the same as in KML 2.2 and the following constraints C1 (i.e. the non-trivial latitude interval constraint) and C2 (i.e. the non-trivial longitude interval constraint) are unchanged:
+    C1  kml:south &lt; kml:north (non-trivial latitude interval);
+    C2  kml:west &lt; kml:east (non-trivial longitude interval).
+New constraints in KML 2.3 are introduced with the longitude range extension to avoid self overlaps and to preserve uniqueness of longitude interval values:
+    C3  kml:east - kml:west ≤ 360 (non-self-overlap);
+    C4  If (|kml:west| or |kml:east|) &gt; 180, then kml:east &gt; 0 and kml:west &lt; 180 (uniqueness).
 The constraint C3 ensures that the longitude interval does not overlap itself. The constraint C4 ensures the choice of the kml:west and kml:east values are unique for every longitude interval. See also: kml:east, kml:west, kml:north, kml:south.
 ]]></documentation>
    </annotation>

@@ -3,8 +3,8 @@
 	<annotation>
 		<documentation>Atmospheric products application schema
         Earth Observation Metadata profile of Observations and Measurements is an OGC Standard.
-        Copyright (c) 2013, 2016 Open Geospatial Consortium. 
-        To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .		
+        Copyright (c) 2013, 2016 Open Geospatial Consortium.
+        To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .
 		</documentation>
 	</annotation>
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
@@ -119,7 +119,7 @@
 					</element>
 					<element name="centreViewAngles">
 						<annotation>
-							<documentation>Comma separated triplet of acquisition viewing angles given at the centerOf coordiantes on the ground (bottom of atmosphere), SolarZenithAngle, LineOfSightZenithAngle, RelativeAzimuth given in degrees.</documentation>
+							<documentation>Comma separated triplet of acquisition viewing angles given at the centerOf coordinates on the ground (bottom of atmosphere), SolarZenithAngle, LineOfSightZenithAngle, RelativeAzimuth given in degrees.</documentation>
 						</annotation>
 					</element>
 				</sequence>

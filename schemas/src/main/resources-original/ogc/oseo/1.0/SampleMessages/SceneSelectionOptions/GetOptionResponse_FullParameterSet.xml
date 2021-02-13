@@ -20,7 +20,7 @@
 					</swe:Count>
 				</swe:field>
 			</swe:DataRecord>
-		</option> 
+		</option>
 		<productDeliveryOptions>
 			<mediaDelivery>
 				<packageMedium>DVD</packageMedium>
@@ -43,7 +43,7 @@
 						</swe:Count>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- sceneCentreCoordinates Parameter -->
 			<!-- ###################################################-->
@@ -69,7 +69,7 @@
 			<sceneSelectionParameter>
 				<swe:Vector definition="http://www.opengis.net/def/parameter/ESA/1.0/sceneCentreCoordinates" referenceFrame="http://www.opengis.net/def/crs/EPSG/7.1/4326">
 				<swe:identifier>sceneCentreCoordinates</swe:identifier>
-				<swe:description>Scene Center coordiantes</swe:description>
+				<swe:description>Scene Center coordinates</swe:description>
 				<swe:coordinate name="latitude">
 					<swe:Quantity definition="http://www.opengis.net/def/parameter/ESA/1.0/latitude" axisID="Lat">
 						<swe:identifier>Latitude</swe:identifier>
@@ -142,7 +142,7 @@
 			<sceneSelectionParameter>
 				<swe:DataArray definition="http://www.opengis.net/def/parameter/ESA/1.0/sceneCentreCoordinates" optional="false" updatable="false">
 					<swe:identifier>sceneCentreCoordinates</swe:identifier>
-					<swe:description>Scene Center coordiantes</swe:description>
+					<swe:description>Scene Center coordinates</swe:description>
 					<swe:elementCount>
 						<swe:Count definition="http://www.opengis.net/def/parameter/ESA/1.0/SpatialDimension"/>
 					</swe:elementCount>
@@ -231,7 +231,7 @@
 						</swe:encoding>
 						<swe:values><SceneWidth>450</SceneWidth></swe:values>
 					</swe:DataArray>
-				</sceneRestriction> 
+				</sceneRestriction>
 			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- Frame Parameter -->
@@ -318,7 +318,7 @@
 						</swe:Quantity>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- acrossTrackSize Parameter -->
 			<!-- ###################################################-->
@@ -336,8 +336,8 @@
 							</swe:constraint>
 						</swe:Quantity>
 					</swe:field>
-				</swe:DataRecord>	
-			</sceneSelectionParameter> 
+				</swe:DataRecord>
+			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- sceneBoundingPolygon Parameter -->
 			<!-- ###################################################-->
@@ -501,8 +501,8 @@
 									<Step>0.02</Step>
 								</FloatingPassLenght>
 							</swe:values>
-						</swe:DataArray>	
-				</sceneRestriction> 
+						</swe:DataArray>
+				</sceneRestriction>
 			</sceneSelectionParameter>
 			<!-- sceneStartStopTime Parameter with FloatingSceneLength restriction -->
 			<sceneSelectionParameter>
@@ -519,7 +519,7 @@
 							</swe:constraint>
 						</swe:TimeRange>
 					</swe:field>
-				</swe:DataRecord>	
+				</swe:DataRecord>
 				<!-- FloatingSceneLength definition -->
 				<sceneRestriction>
 				<swe:DataArray>
@@ -536,8 +536,8 @@
 							<swe:values>
 								<FloatingSceneLength>240.0</FloatingSceneLength>
 							</swe:values>
-				</swe:DataArray>	
-				</sceneRestriction> 
+				</swe:DataArray>
+				</sceneRestriction>
 			</sceneSelectionParameter>
 			<!-- sceneStartStopTime Parameter with SceneWidth and WRSInformation restriction -->
 			<sceneSelectionParameter>
@@ -554,7 +554,7 @@
 							</swe:constraint>
 						</swe:TimeRange>
 					</swe:field>
-				</swe:DataRecord>	
+				</swe:DataRecord>
 				<!-- FloatingPassLength definition -->
 				<sceneRestriction>
 					<swe:DataArray optional="false" updatable="false" definition="http://www.opengis.net/def/parameter/ESA/1.0/WRSInformation">
@@ -622,7 +622,7 @@
 						</swe:encoding>
 						<swe:values><SceneWidth>450</SceneWidth></swe:values>
 					</swe:DataArray>
-				</sceneRestriction> 
+				</sceneRestriction>
 			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- lookAngle Parameter -->
@@ -640,7 +640,7 @@
 					<swe:field name="FOV">
 						<swe:Quantity><swe:uom code="deg"></swe:uom></swe:Quantity>
 					</swe:field>
-				</swe:DataRecord> 
+				</swe:DataRecord>
 				</swe:elementType>
 				</swe:DataArray>
 			</sceneSelectionParameter>
@@ -661,7 +661,7 @@
 						</swe:Count>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- Track Parameter -->
 			<!-- ###################################################-->
@@ -679,7 +679,7 @@
 						</swe:Count>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- rowsExtraction Parameter -->
 			<!-- ###################################################-->
@@ -724,7 +724,7 @@
 							</SubSatellitePosition>
 						</swe:values>
 					</swe:DataArray>
-				</sceneRestriction> 				
+				</sceneRestriction>
 			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- columnsExtraction Parameter -->
@@ -770,7 +770,7 @@
 							</SubSatellitePosition>
 						</swe:values>
 					</swe:DataArray>
-				</sceneRestriction> 				
+				</sceneRestriction>
 			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- sceneType Parameter -->
@@ -791,14 +791,14 @@
 					</swe:Category>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<!-- ###################################################-->
 			<!-- sceneBoundingRectangle Parameter -->
 			<!-- ###################################################-->
 			<sceneSelectionParameter>
 				<swe:DataArray definition="http://www.opengis.net/def/parameter/ESA/1.0/sceneBoundingRectangle" optional="false" updatable="false">
 					<swe:identifier>sceneBoundingRectangle</swe:identifier>
-					<swe:description>Scene Center coordiantes</swe:description>
+					<swe:description>Scene Center coordinates</swe:description>
 					<swe:elementCount>
 						<swe:Count definition="http://www.opengis.net/def/parameter/ESA/1.0/SpatialDimension"/>
 					</swe:elementCount>
@@ -820,7 +820,7 @@
 						</swe:Vector>
 					</swe:elementType>
 				</swe:DataArray>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 		</sceneSelectionOption>
 	</orderOptions>
 </GetOptionsResponse>

@@ -20,7 +20,7 @@
 					</swe:Count>
 				</swe:field>
 			</swe:DataRecord>
-		</option> 
+		</option>
 		<productDeliveryOptions>
 			<mediaDelivery>
 				<packageMedium>DVD</packageMedium>
@@ -48,7 +48,7 @@
 			<sceneSelectionParameter>
 				<swe:DataArray definition="http://www.opengis.net/def/parameter/ESA/1.0/sceneCentreCoordinates" optional="false" updatable="false">
 					<swe:identifier>sceneCentreCoordinates</swe:identifier>
-					<swe:description>Scene Center coordiantes</swe:description>
+					<swe:description>Scene Center coordinates</swe:description>
 					<swe:elementCount>
 						<swe:Count definition="http://www.opengis.net/def/parameter/ESA/1.0/SpatialDimension"/>
 					</swe:elementCount>
@@ -214,7 +214,7 @@
 					</swe:Category>
 					</swe:field>
 				</swe:DataRecord>
-			</sceneSelectionParameter> 
+			</sceneSelectionParameter>
 			<sceneSelectionParameter>
 				<swe:DataRecord>
 					<swe:field name="sceneStartStopTime">
