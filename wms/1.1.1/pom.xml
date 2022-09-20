@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.ogc-schemas</groupId>
 		<artifactId>ogc-dtd-parent</artifactId>
-		<version>3.0.0</version>
+		<version>4.0.0</version>
 		<relativePath>../../dtd-parent/pom.xml</relativePath>
 	</parent>
 	<build>

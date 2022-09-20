@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.ogc-schemas</groupId>
 		<artifactId>ogc-schemas-project</artifactId>
-		<version>3.0.0</version>
+		<version>4.0.0</version>
 	</parent>
 	<build>
 		<defaultGoal>install</defaultGoal>

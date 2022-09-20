@@ -169,3 +169,16 @@ unmarshaller.unmarshalFile("tests/WPS/1.0.0/execute-01.xml", function(result) {
 	test.done();
 });
 ```
+
+# Changelog
+
+## 4.0.0
+
+- require Java 8
+- change `Automatic-Module-Name` prefix from `net.opengis` to `org.ogc_schemas`
+- update dependencies
+
+## 3.0.0
+
+- use new group id `org.ogc-schemas`
+- add `AUTOMATIC-MODULE-NAME` entries to jar files
