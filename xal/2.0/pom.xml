@@ -13,7 +13,7 @@
 	</parent>
 	<dependencies>
 		<!--dependency>
-			<groupId>org.hisrc.w3c</groupId>
+			<groupId>org.w3c-schemas</groupId>
 			<artifactId>atom-v_1_0</artifactId>
 			<version>${w3c-schemas.version}</version>
 		</dependency-->

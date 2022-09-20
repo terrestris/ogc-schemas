@@ -13,7 +13,7 @@
 	</parent>
 	<dependencies>
 		<dependency>
-			<groupId>org.hisrc.w3c</groupId>
+			<groupId>org.w3c-schemas</groupId>
 			<artifactId>xlink-v_1_0</artifactId>
 		</dependency>
 		<dependency>
@@ -69,7 +69,7 @@
 						</binding>
 						<binding>
 							<dependencyResource>
-								<groupId>org.hisrc.w3c</groupId>
+								<groupId>org.w3c-schemas</groupId>
 								<artifactId>xlink-v_1_0</artifactId>
 								<resource>xlink-v_1_0.jsonix.xjb</resource>
 								<version>${w3c-schemas.version}</version>

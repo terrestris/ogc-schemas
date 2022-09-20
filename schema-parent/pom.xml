@@ -80,7 +80,7 @@
 							</catalog>
 							<catalog>
 								<dependencyResource>
-									<groupId>org.hisrc.w3c</groupId>
+									<groupId>org.w3c-schemas</groupId>
 									<artifactId>w3c-schemas</artifactId>
 									<resource>w3c/catalog.cat</resource>
 									<version>${w3c-schemas.version}</version>

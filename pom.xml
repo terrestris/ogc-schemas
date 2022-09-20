@@ -123,7 +123,7 @@
 		<jaxb2-basics.version>0.11.0</jaxb2-basics.version>
 		<jaxb.version>2.2.11</jaxb.version>
 		<maven-jaxb2-plugin.version>0.13.1</maven-jaxb2-plugin.version>
-		<w3c-schemas.version>1.4.0</w3c-schemas.version>
+		<w3c-schemas.version>2.0.0</w3c-schemas.version>
 		<jsonix-schema-compiler.version>2.3.8</jsonix-schema-compiler.version>
 		<jsonix.version>2.4.0</jsonix.version>
 	</properties>
@@ -184,22 +184,22 @@
 				<version>${jaxb.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.hisrc.w3c</groupId>
+				<groupId>org.w3c-schemas</groupId>
 				<artifactId>ws-addr-v_1_0-core</artifactId>
 				<version>${w3c-schemas.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.hisrc.w3c</groupId>
+				<groupId>org.w3c-schemas</groupId>
 				<artifactId>xlink-v_1_0</artifactId>
 				<version>${w3c-schemas.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.hisrc.w3c</groupId>
+				<groupId>org.w3c-schemas</groupId>
 				<artifactId>xmlschema-v_1_0</artifactId>
 				<version>${w3c-schemas.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.hisrc.w3c</groupId>
+				<groupId>org.w3c-schemas</groupId>
 				<artifactId>w3c-schemas</artifactId>
 				<version>${w3c-schemas.version}</version>
 			</dependency>
