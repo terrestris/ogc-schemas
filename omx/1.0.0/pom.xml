@@ -51,7 +51,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.omx.v_1_0_0</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.omx.v_1_0_0</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

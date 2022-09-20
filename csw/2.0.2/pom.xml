@@ -36,7 +36,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.csw.v_2_0_2</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.csw.v_2_0_2</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

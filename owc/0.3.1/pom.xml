@@ -56,7 +56,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.owc.v_0_3_1</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.owc.v_0_3_1</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

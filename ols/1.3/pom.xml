@@ -36,7 +36,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.olsnav.v_1_3</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.olsnav.v_1_3</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

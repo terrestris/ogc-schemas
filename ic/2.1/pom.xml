@@ -20,7 +20,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.ic.v_2_1</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.ic.v_2_1</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

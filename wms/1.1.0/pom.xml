@@ -20,7 +20,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.wms.v_1_1_0</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.wms.v_1_1_0</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

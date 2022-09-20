@@ -31,7 +31,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.gml.v_3_3</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.gml.v_3_3</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

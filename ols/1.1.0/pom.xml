@@ -31,7 +31,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.ols.v_1_1_0</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.ols.v_1_1_0</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

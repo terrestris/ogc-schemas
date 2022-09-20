@@ -26,7 +26,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.ows.v_2_0</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.ows.v_2_0</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

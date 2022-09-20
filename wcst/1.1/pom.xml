@@ -31,7 +31,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.wcst.v_1_1</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.wcst.v_1_1</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

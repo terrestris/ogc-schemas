@@ -36,7 +36,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.wfs.v_1_0_0</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.wfs.v_1_0_0</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>

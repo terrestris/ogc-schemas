@@ -37,7 +37,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
-							<Automatic-Module-Name>net.opengis.oseo.v_1_0</Automatic-Module-Name>
+							<Automatic-Module-Name>org.ogc_schemas.oseo.v_1_0</Automatic-Module-Name>
 						</manifestEntries>
 					</archive>
 				</configuration>
