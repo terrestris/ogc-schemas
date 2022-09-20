@@ -121,7 +121,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jaxb2-basics.version>1.11.1</jaxb2-basics.version>
-		<jaxb.version>3.0.2</jaxb.version>
+		<jaxb.version>2.3.6</jaxb.version>
 		<maven-jaxb2-plugin.version>0.15.1</maven-jaxb2-plugin.version>
 		<w3c-schemas.version>2.0.0</w3c-schemas.version>
 		<jsonix-schema-compiler.version>2.3.8</jsonix-schema-compiler.version>
