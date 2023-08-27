@@ -3,7 +3,7 @@ package net.opengis.wcs.v_1_0_0;
 import java.util.Hashtable;
 import java.util.Map;
 
-public class NamespacePrefixMapper extends com.sun.xml.bind.marshaller.NamespacePrefixMapper {
+public class NamespacePrefixMapper extends org.glassfish.jaxb.runtime.marshaller.NamespacePrefixMapper {
 
 	/** The holder for the mappings. */
 	private final Map<String, String> URI_2_prefix = new Hashtable<String, String>();
@@ -23,7 +23,7 @@ public class NamespacePrefixMapper extends com.sun.xml.bind.marshaller.Namespace
 
 	/**
 	 * Returns a preferred prefix for the given namespace URI.
-	 * 
+	 *
 	 * @param namespaceUri
 	 *            The namespace URI for which the prefix needs to be found.
 	 *            Never be null. "" is used to denote the default namespace.

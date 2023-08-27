@@ -5,15 +5,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
 
 import net.opengis.gml.v_3_2_0.DirectPositionType;
 import net.opengis.gml.v_3_2_0.GridEnvelopeType;
 import net.opengis.gml.v_3_2_0.GridLimitsType;
-import net.opengis.gml.v_3_2_0.GridType;
 import net.opengis.gml.v_3_2_0.ObjectFactory;
 import net.opengis.gml.v_3_2_0.PointPropertyType;
 import net.opengis.gml.v_3_2_0.PointType;
@@ -44,7 +43,7 @@ public class RectifiedGrid_Test {
 
 	/**
 	 * Test that the rectified grid element can be marshalled.
-	 * 
+	 *
 	 * @throws JAXBException
 	 *             Thrown if there is a problem marshalling the model.
 	 * @throws SAXException
@@ -68,7 +67,7 @@ public class RectifiedGrid_Test {
 
 	/**
 	 * Creates a sample rectified grid.
-	 * 
+	 *
 	 * @param gmlFactory
 	 *            Factory to build GML types.
 	 * @return The assembled sample RectifiedGridType

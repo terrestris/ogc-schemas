@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
@@ -66,7 +66,7 @@ public class WCS_V_1_0_0_Test {
 	/**
 	 * Test that enforces that the marshalled coverage description complies with
 	 * the provided WCS 1.0.0 schemas.
-	 * 
+	 *
 	 * @throws JAXBException
 	 *             Thrown if there is a problem marshalling the model.
 	 * @throws SAXException
@@ -153,7 +153,8 @@ public class WCS_V_1_0_0_Test {
 	 */
 	private Marshaller createMarshaller() throws JAXBException {
 		Marshaller m = this.context.createMarshaller();
-		m.setProperty("com.sun.xml.bind.namespacePrefixMapper", prefixMapper);
+		// this appears to not be supported anymore:
+		// m.setProperty("com.sun.xml.bind.namespacePrefixMapper", prefixMapper);
 		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 		return m;
 	}
@@ -186,7 +187,7 @@ public class WCS_V_1_0_0_Test {
 
 	/**
 	 * Creates a sample rectified grid.
-	 * 
+	 *
 	 * @param gmlFactory
 	 *            Factory to build GML types.
 	 * @return The assembled sample RectifiedGridType
@@ -229,7 +230,7 @@ public class WCS_V_1_0_0_Test {
 
 	/**
 	 * Create a sample direct position.
-	 * 
+	 *
 	 * @param gmlFactory
 	 *            Factory to build GML types.
 	 * @param x
@@ -247,7 +248,7 @@ public class WCS_V_1_0_0_Test {
 
 	/**
 	 * Creates a sample envelope.
-	 * 
+	 *
 	 * @param gmlFactory
 	 *            Factory to build GML types.
 	 * @return The assembled sample EnvelopeType
@@ -262,7 +263,7 @@ public class WCS_V_1_0_0_Test {
 
 	/**
 	 * Creates a sample longitude latitude envelope.
-	 * 
+	 *
 	 * @param wcsFactory
 	 *            Factory to build WCS types.
 	 * @param lowerLeft
@@ -281,7 +282,7 @@ public class WCS_V_1_0_0_Test {
 
 	/**
 	 * Creates a sample range set.
-	 * 
+	 *
 	 * @param wcsFactory
 	 *            Factory to build WCS types.
 	 * @return The assembled RangeSet.

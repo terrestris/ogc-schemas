@@ -1,9 +1,9 @@
-package net.opengis.ows.v_1_1_0.tests;
+package net.opengis.ows.v_2_0.tests;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
 
 import net.opengis.ows.v_2_0.BoundingBoxType;
 import net.opengis.ows.v_2_0.ObjectFactory;
@@ -32,7 +32,7 @@ public class BoundingBox_Test {
 
 	/**
 	 * Test that a bounding box element can be marshalled.
-	 * 
+	 *
 	 * @throws JAXBException
 	 *             Thrown if there is a problem marshalling the model.
 	 * @throws SAXException

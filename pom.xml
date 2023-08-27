@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 	<name>OGC Schemas Project</name>
 	<url>https://github.com/ogc-schemas/ogc-schemas</url>
-	<description>OGC Schemas project provides JAXB 2.x bindings for XML Schemas defined by the Open Geospatial Consortium (OGC).</description>
+	<description>OGC Schemas project provides JAXB and Jsonix bindings for XML Schemas defined by the Open Geospatial Consortium (OGC).</description>
 	<issueManagement>
 		<system>GitHub Issues</system>
 		<url>https://github.com/ogc-schemas/ogc-schemas/issues</url>
@@ -167,7 +167,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jaxb2-basics.version>1.11.1</jaxb2-basics.version>
-		<jaxb.version>2.3.6</jaxb.version>
+		<jaxb.version>3.0.2</jaxb.version>
 		<maven-jaxb2-plugin.version>0.15.1</maven-jaxb2-plugin.version>
 		<w3c-schemas.version>3.0.0</w3c-schemas.version>
 		<jsonix-schema-compiler.version>2.3.8</jsonix-schema-compiler.version>
@@ -182,6 +182,11 @@
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>jakarta.xml.bind</groupId>
+				<artifactId>jakarta.xml.bind-api</artifactId>
+				<version>3.0.1</version>
+			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
 				<artifactId>ogc-schemas</artifactId>
@@ -223,11 +228,6 @@
 				<artifactId>jaxb-runtime</artifactId>
 				<version>${jaxb.version}</version>
 				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>javax.xml.bind</groupId>
-				<artifactId>jaxb-api</artifactId>
-				<version>${jaxb.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.w3c-schemas</groupId>

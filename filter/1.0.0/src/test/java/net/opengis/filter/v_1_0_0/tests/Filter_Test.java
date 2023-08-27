@@ -1,11 +1,9 @@
 package net.opengis.filter.v_1_0_0.tests;
 
-import java.io.StringReader;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Unmarshaller;
 
 import net.opengis.filter.v_1_0_0.FilterType;
 
@@ -33,14 +31,14 @@ public class Filter_Test {
 
 	/**
 	 * Verifies that a PropertyNameType object can be unmarshalled.
-	 * 
+	 *
 	 * @throws Exception
 	 *             Thrown if there is a problem.
 	 */
 	@SuppressWarnings("unchecked")
 	@Test
 	public void testUnmarshallPropertyNameType() throws Exception {
-		
+
 		Unmarshaller unmarshaller = this.context.createUnmarshaller();
 		JAXBElement<FilterType> filter = (JAXBElement<FilterType>) unmarshaller.unmarshal(getClass().getResource("Filter01.xml"));
 		Assert.assertNotNull(filter);
