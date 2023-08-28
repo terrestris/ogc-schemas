@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.ogc-schemas</groupId>
 	<artifactId>ogc-schemas-project</artifactId>
-	<version>4.0.0</version>
+	<version>5.0.0</version>
 	<packaging>pom</packaging>
 	<name>OGC Schemas Project</name>
 	<url>https://github.com/ogc-schemas/ogc-schemas</url>

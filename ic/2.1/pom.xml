@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.ogc-schemas</groupId>
 		<artifactId>ogc-schema-parent</artifactId>
-		<version>4.0.0</version>
+		<version>5.0.0</version>
 		<relativePath>../../schema-parent/pom.xml</relativePath>
 	</parent>
 	<build>

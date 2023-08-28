@@ -172,6 +172,10 @@ unmarshaller.unmarshalFile("tests/WPS/1.0.0/execute-01.xml", function(result) {
 
 # Changelog
 
+## 5.0.0
+- use `jakarta.xml.bind` instead of `javax.xml.bind` 
+- update dependencies
+
 ## 4.0.0
 
 - require Java 8
