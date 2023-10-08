@@ -34,17 +34,6 @@
 								<goal>generate</goal>
 							</goals>
 						</execution>
-						<!--execution>
-							<id>jsonix</id>
-							<goals>
-								<goal>generate</goal>
-							</goals>
-							<configuration>
-								<generateDirectory>${project.build.directory}/generated-sources/jsonix</generateDirectory>
-								<useDependenciesAsEpisodes>false</useDependenciesAsEpisodes>
-								<writeCode>false</writeCode>
-							</configuration>
-						</execution-->
 					</executions>
 					<configuration>
 						<useDependenciesAsEpisodes>true</useDependenciesAsEpisodes>
@@ -99,9 +88,6 @@
 							<arg>-Xinject-code</arg>
 							<arg>-Xinheritance</arg>
 							<arg>-Xfluent-api</arg>
-							<arg>-Xjsonix</arg>
-							<arg>-Xjsonix-compact</arg>
-							<arg>-Xjsonix-generateJsonSchema</arg>
 							<arg>-Xannotate</arg>
 							<!--arg>-Xvisitor</arg-->
 						</args>
@@ -118,14 +104,6 @@
 								<groupId>org.jvnet.jaxb2_commons</groupId>
 								<artifactId>jaxb2-fluent-api</artifactId>
 							</plugin>
-							<!--plugin>
-								<groupId>com.massfords</groupId>
-								<artifactId>jaxb-visitor</artifactId>
-							</plugin-->
-							<dependency>
-								<groupId>org.hisrc.jsonix</groupId>
-								<artifactId>jsonix-schema-compiler</artifactId>
-							</dependency>
 						</plugins>
 					</configuration>
 				</plugin>
@@ -150,76 +128,12 @@
 								<goal>run</goal>
 							</goals>
 						</execution>
-						<execution>
-							<id>package-scripts</id>
-							<phase>package</phase>
-							<configuration>
-								<target>
-									<zip basedir="${project.build.directory}/generated-sources/xjc" destfile="${project.build.directory}/${project.artifactId}-${project.version}-scripts.zip">
-										<patternset>
-											<include name="**/*.js"/>
-										</patternset>
-									</zip>
-								</target>
-							</configuration>
-							<goals>
-								<goal>run</goal>
-							</goals>
-						</execution>
-						<execution>
-							<id>package-jsonschemas</id>
-							<phase>package</phase>
-							<configuration>
-								<target>
-									<zip basedir="${project.build.directory}/generated-sources/xjc" destfile="${project.build.directory}/${project.artifactId}-${project.version}-jsonschemas.zip">
-										<patternset>
-											<include name="**/*.jsonschema"/>
-										</patternset>
-									</zip>
-								</target>
-							</configuration>
-							<goals>
-								<goal>run</goal>
-							</goals>
-						</execution>
 					</executions>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
 					<executions>
-						<execution>
-							<id>attach-scripts</id>
-							<phase>package</phase>
-							<goals>
-								<goal>attach-artifact</goal>
-							</goals>
-							<configuration>
-								<artifacts>
-									<artifact>
-										<file>${project.build.directory}/${project.artifactId}-${project.version}-scripts.zip</file>
-										<type>zip</type>
-										<classifier>scripts</classifier>
-									</artifact>
-								</artifacts>
-							</configuration>
-						</execution>
-						<execution>
-							<id>attach-jsonschemas</id>
-							<phase>package</phase>
-							<goals>
-								<goal>attach-artifact</goal>
-							</goals>
-							<configuration>
-								<artifacts>
-									<artifact>
-										<file>${project.build.directory}/${project.artifactId}-${project.version}-jsonschemas.zip</file>
-										<type>zip</type>
-										<classifier>jsonschemas</classifier>
-									</artifact>
-								</artifacts>
-							</configuration>
-						</execution>
 						<execution>
 							<id>add-resource</id>
 							<phase>generate-resources</phase>

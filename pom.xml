@@ -99,7 +99,6 @@
 		<module>wmts</module>
 		<module>wps</module>
 		<module>xal</module>
-		<module>scripts</module>
 		<module>dist</module>
 	</modules>
 	<profiles>
@@ -170,8 +169,6 @@
 		<jaxb.version>3.0.2</jaxb.version>
 		<maven-jaxb2-plugin.version>0.15.1</maven-jaxb2-plugin.version>
 		<w3c-schemas.version>3.0.0</w3c-schemas.version>
-		<jsonix-schema-compiler.version>2.3.8</jsonix-schema-compiler.version>
-		<jsonix.version>2.4.0</jsonix.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -248,11 +245,6 @@
 				<groupId>org.w3c-schemas</groupId>
 				<artifactId>w3c-schemas</artifactId>
 				<version>${w3c-schemas.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.hisrc.jsonix</groupId>
-				<artifactId>jsonix-schema-compiler</artifactId>
-				<version>${jsonix-schema-compiler.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
