@@ -81,8 +81,8 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.jvnet.jaxb2.maven2</groupId>
-				<artifactId>maven-jaxb2-plugin</artifactId>
+				<groupId>org.jvnet.jaxb</groupId>
+				<artifactId>jaxb-maven-plugin</artifactId>
 				<configuration>
 					<schemaIncludes>
 						<include>ogc/wms/1.1.0/wms_1_1_0.dtd</include>

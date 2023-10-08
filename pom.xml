@@ -165,10 +165,10 @@
 	</profiles>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jaxb2-basics.version>1.11.1</jaxb2-basics.version>
-		<jaxb.version>3.0.2</jaxb.version>
-		<maven-jaxb2-plugin.version>0.15.1</maven-jaxb2-plugin.version>
-		<w3c-schemas.version>3.0.0</w3c-schemas.version>
+		<jaxb.version>3.0.1</jaxb.version>
+		<jaxb-runtime.version>3.0.2</jaxb-runtime.version>
+		<jaxb-plugins.version>3.0.1</jaxb-plugins.version>
+		<w3c-schemas.version>3.0.1</w3c-schemas.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -182,7 +182,7 @@
 			<dependency>
 				<groupId>jakarta.xml.bind</groupId>
 				<artifactId>jakarta.xml.bind-api</artifactId>
-				<version>3.0.1</version>
+				<version>${jaxb.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
@@ -196,34 +196,25 @@
 				<version>4.13.2</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jvnet.jaxb2_commons</groupId>
-				<artifactId>jaxb2-fluent-api</artifactId>
-				<version>3.0</version>
+				<groupId>org.jvnet.jaxb</groupId>
+				<artifactId>jaxb-plugins-runtime</artifactId>
+				<version>${jaxb-plugins.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jvnet.jaxb2_commons</groupId>
-				<artifactId>jaxb2-basics</artifactId>
-				<version>${jaxb2-basics.version}</version>
+				<groupId>org.jvnet.jaxb</groupId>
+				<artifactId>jaxb-plugins</artifactId>
+				<version>${jaxb-plugins.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jvnet.jaxb2_commons</groupId>
-				<artifactId>jaxb2-basics-runtime</artifactId>
-				<version>${jaxb2-basics.version}</version>
+				<groupId>org.jvnet.jaxb</groupId>
+				<artifactId>jaxb-plugin-annotate</artifactId>
+				<version>${jaxb-plugins.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.jvnet.jaxb2_commons</groupId>
-				<artifactId>jaxb2-basics-annotate</artifactId>
-				<version>1.0.2</version>
-			</dependency>
-			<dependency>
-				<groupId>com.massfords</groupId>
-				<artifactId>jaxb-visitor</artifactId>
-				<version>3.0.0</version>
-			</dependency>
+
 			<dependency>
 				<groupId>org.glassfish.jaxb</groupId>
 				<artifactId>jaxb-runtime</artifactId>
-				<version>${jaxb.version}</version>
+				<version>${jaxb-runtime.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
@@ -261,9 +252,9 @@
 					</configuration>
 				</plugin>
 				<plugin>
-					<groupId>org.jvnet.jaxb2.maven2</groupId>
-					<artifactId>maven-jaxb2-plugin</artifactId>
-					<version>${maven-jaxb2-plugin.version}</version>
+					<groupId>org.jvnet.jaxb</groupId>
+					<artifactId>jaxb-maven-plugin</artifactId>
+					<version>${jaxb-plugins.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>

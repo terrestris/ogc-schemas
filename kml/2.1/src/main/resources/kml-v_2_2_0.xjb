@@ -1,7 +1,9 @@
-<jaxb:bindings version="1.0" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" 
-	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" 
-	jaxb:extensionBindingPrefixes="xjc">
+<jaxb:bindings
+		version="3.0"
+		xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+		jaxb:extensionBindingPrefixes="xjc">
 
 	<jaxb:bindings schemaLocation="https://developers.google.com/kml/schema/kml21.xsd" 
 		node="/xs:schema">
@@ -39,4 +41,5 @@
 			<jaxb:package name="org.hisrc.w3c.oasis.xal.v_2_0"/>
 		</jaxb:schemaBindings>
 	</jaxb:bindings-->
+
 </jaxb:bindings>
