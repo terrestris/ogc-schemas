@@ -89,6 +89,7 @@
 							<arg>-Xinheritance</arg>
 							<arg>-Xfluent-api</arg>
 							<arg>-Xannotate</arg>
+							<arg>-Xvalue-constructor</arg>
 						</args>
 						<plugins>
 							<plugin>
