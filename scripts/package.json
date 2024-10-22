@@ -1,5 +1,5 @@
 {
-	"name": "@ogc-schemas/ogc-schemas",
+	"name": "@terrestris/ogc-schemas",
 	"version": "3.0.0",
 	"license": "BSD-2-Clause",
 	"description": "Jsonix XML-JSON mappings for OGC Schemas.",
@@ -87,9 +87,9 @@
 		"WMTS",
 		"WPS"
 	],
-	"homepage": "https://github.com/ogc-schemas/ogc-schemas",
+	"homepage": "https://github.com/terrestris/ogc-schemas",
 	"bugs": {
-		"url": "http://github.com/ogc-schemas/ogc-schemas/issues"
+		"url": "http://github.com/terrestris/ogc-schemas/issues"
 	},
 	"author": {
 		"name": "Alexey Valikov",
@@ -98,17 +98,19 @@
 	"main": "ogc-schemas.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ogc-schemas/ogc-schemas"
+		"url": "https://github.com/terrestris/ogc-schemas"
 	},
 	"scripts": {
-		"test": "nodeunit tests/tests.js"
+		"test": "nodeunit tests/tests.js",
+		"release": "np --no-yarn"
 	},
 	"dependencies": {
-		"jsonix": ">=2.4.0",
-		"w3c-schemas": ">=1.4.0"
+		"@mitre/jsonix": ">=3.0.7",
+		"@terrestris/w3c-schemas": "2.0.0"
 	},
 	"devDependencies": {
 		"node-static": "0.x.x",
-		"nodeunit": "0.x.x"
+		"nodeunit": "0.x.x",
+		"np": "10.0.7"
 	}
 }

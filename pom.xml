@@ -7,11 +7,11 @@
 	<version>5.0.1</version>
 	<packaging>pom</packaging>
 	<name>OGC Schemas Project</name>
-	<url>https://github.com/ogc-schemas/ogc-schemas</url>
+	<url>https://github.com/terrestris/ogc-schemas</url>
 	<description>OGC Schemas project provides JAXB and Jsonix bindings for XML Schemas defined by the Open Geospatial Consortium (OGC).</description>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/ogc-schemas/ogc-schemas/issues</url>
+		<url>https://github.com/terrestris/ogc-schemas/issues</url>
 	</issueManagement>
 	<inceptionYear>2008</inceptionYear>
 	<developers>
@@ -39,9 +39,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git@github.com:ogc-schemas/ogc-schemas.git</connection>
-		<developerConnection>scm:git:git@github.com:ogc-schemas/ogc-schemas.git</developerConnection>
-		<url>https://github.com/ogc-schemas/ogc-schemas</url>
+		<connection>scm:git:git@github.com:terrestris/ogc-schemas.git</connection>
+		<developerConnection>scm:git:git@github.com:terrestris/ogc-schemas.git</developerConnection>
+		<url>https://github.com/terrestris/ogc-schemas</url>
 	</scm>
 	<distributionManagement>
 		<repository>
